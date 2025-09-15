@@ -1,13 +1,161 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Destino | Desenvolvimento Web Moderno</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">ViteDemo</div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header id="header" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-on-scroll">Desenvolvimento Web Simplificado</h1>
+        <p class="subtitle animate-on-scroll">Uma demonstração de página moderna construída com Vite e JavaScript vanilla</p>
+        <div class="hero-buttons animate-on-scroll">
+          <button class="btn btn-primary">Começar Agora</button>
+          <button class="btn btn-outline" id="toggle-features">Ver Recursos</button>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll">
+        <div class="code-block">
+          <pre><code>// Vite + JavaScript Vanilla
+import '/style.css'
+document.querySelector('#app').innerHTML = `
+  <h1>Olá Mundo!</h1>
+`</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,224C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Sobre Esta Página</h2>
+        <div class="about-content">
+          <div class="about-text animate-on-scroll">
+            <p>Esta é uma demonstração de uma página de destino moderna e responsiva construída usando apenas JavaScript vanilla e Vite como bundler.</p>
+            <p>Sem frameworks complexos ou bibliotecas pesadas - apenas código limpo e eficiente que carrega rapidamente e oferece uma experiência suave ao usuário.</p>
+            <ul class="feature-list">
+              <li>Design responsivo para todos os dispositivos</li>
+              <li>Animações suaves e interações intuitivas</li>
+              <li>Performance otimizada sem dependências externas</li>
+              <li>Código limpo e bem organizado</li>
+            </ul>
+          </div>
+          <div class="about-image animate-on-scroll">
+            <div class="tech-stack">
+              <div class="tech-item">HTML5</div>
+              <div class="tech-item">CSS3</div>
+              <div class="tech-item">JavaScript</div>
+              <div class="tech-item">Vite</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="features-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Recursos Principais</h2>
+        <div class="features-grid">
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">📐</div>
+            <h3>Estrutura HTML Semântica</h3>
+            <p>Utilizando as melhores práticas de HTML5 para uma estrutura bem organizada e acessível.</p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">🎨</div>
+            <h3>Estilização CSS Moderna</h3>
+            <p>CSS moderno com variáveis, flexbox e grid para layouts avançados e responsivos.</p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">⚡</div>
+            <h3>JavaScript Otimizado</h3>
+            <p>Código JavaScript limpo e eficiente para interatividade suave e rápida.</p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">📱</div>
+            <h3>Design Responsivo</h3>
+            <p>Adaptação perfeita para qualquer tamanho de tela, de smartphones a desktops.</p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">🚀</div>
+            <h3>Performance Rápida</h3>
+            <p>Carregamento rápido e experiência de usuário fluida em qualquer dispositivo.</p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">🔧</div>
+            <h3>Fácil Manutenção</h3>
+            <p>Código organizado e bem documentado para facilitar atualizações futuras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="cta-section">
+      <div class="container">
+        <div class="cta-content animate-on-scroll">
+          <h2>Pronto para começar seu projeto?</h2>
+          <p>Esta demonstração mostra como é possível criar sites modernos e elegantes usando tecnologias web fundamentais.</p>
+          <button class="btn btn-primary">Entre em Contato</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">ViteDemo</div>
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="https://vitejs.dev/" target="_blank">Documentação Vite</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ViteDemo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
