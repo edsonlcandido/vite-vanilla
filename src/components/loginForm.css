@@ -1,0 +1,31 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f6f8fa;
+}
+
+.login-form__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #22223b;
+  font-weight: 600;
+}
+
+.login-form__button {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  background: #4361ee;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.login-form__button:hover {
+  background: #2746b6;
+}

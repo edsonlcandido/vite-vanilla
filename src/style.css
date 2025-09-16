@@ -134,7 +134,7 @@ img {
   position: relative;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
-  padding: 150px 0 100px;
+  padding: 150px 0 200px;
   overflow: hidden;
 }
 

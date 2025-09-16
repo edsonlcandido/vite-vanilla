@@ -1,31 +1,10 @@
 // filepath: c:\Users\CandidED\OneDrive - Chart Industries Inc\Visual Studio Projects\edsonlcandido\vite-vanilla\src\main.js
 // Add simple JS to make the page interactive
 document.addEventListener('DOMContentLoaded', () => {
-  const header = document.getElementById('header');
-  header.addEventListener('click', () => {
-    alert('You clicked the header! This page is interactive.');
-  });
-
-  // Mobile menu toggle
-  const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  
-  if (mobileMenu) {
-    mobileMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-    });
-  }
-
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      
-      if (navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
-        mobileMenu.classList.remove('active');
-      }
       
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
