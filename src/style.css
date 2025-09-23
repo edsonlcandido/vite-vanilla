@@ -29,6 +29,14 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* viewport height */
+}
+
+/* Adicionando margem superior para compensar a navbar fixa */
+.hero {
+  padding-top: 90px; /* 70px (altura da navbar) + 20px de espaço extra */
 }
 
 .container {
@@ -417,6 +425,7 @@ img {
   background-color: var(--dark-color);
   color: white;
   padding: 70px 0 20px;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -469,6 +478,47 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   opacity: 0.7;
   font-size: 0.9rem;
+}
+
+/* Modificações para o posicionamento correto do footer */
+
+/* Ajustando o comportamento do body existente para permitir layout flexível */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* viewport height */
+}
+
+/* Adicionar depois do footer existente */
+#footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 70px 0 20px;
+  margin-top: auto;
+}
+
+/* Certifique-se de que o conteúdo principal preencha o espaço disponível */
+main {
+  flex: 1;
+}
+
+/* Ajustes para seções que devem crescer para preencher o espaço vertical */
+.about-section, 
+.features-section, 
+.cta-section,
+.hero-section {
+  width: 100%;
+}
+
+/* Ajuste para dashboard e outras páginas com cards */
+section.cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Animations */
