@@ -112,6 +112,22 @@ img {
   width: 100%;
 }
 
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-left: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -515,6 +531,13 @@ img {
   
   .menu-toggle {
     display: block;
+  }
+  
+  .logout-btn {
+    margin: 0;
+    position: absolute;
+    right: 80px;
+    top: 15px;
   }
   
   .section-title {

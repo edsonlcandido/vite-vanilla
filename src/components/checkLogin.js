@@ -10,7 +10,11 @@ export function isLogado() {
 
 // Redireciona para login.html se não estiver logado
 export function checarLoginOuRedirecionar() {
-  if (!isLogado()) {
+  // Não redireciona se já estiver na página de login
+  const paginaAtual = window.location.pathname;
+  const ehPaginaLogin = paginaAtual.includes('login.html');
+  
+  if (!isLogado() && !ehPaginaLogin) {
     window.location.href = '/login.html';
   }
 }
